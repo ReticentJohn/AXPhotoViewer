@@ -224,6 +224,10 @@ import UIKit
             return view
         }
         
+        if let view = super.hitTest(point, with: event) as? UITextView {
+            return view
+        }
+        
         return nil
     }
     
